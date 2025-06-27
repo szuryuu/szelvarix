@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"hewold/greetings"
 	"strings"
+	"szelvarix/greetings"
 )
 
 var name string
