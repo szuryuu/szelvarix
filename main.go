@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 	"szelvarix/greetings"
 )
@@ -22,7 +24,7 @@ func main() {
        .    /:+- - + +- : :- + + -:'  /(o-) \)     .
   .      ,=':  \    ' '/ + "" +  ' , , ,:' '--".--"---._/7
    '.   (    \: \,-._' ' + '\, ,"   _,--._,---":.__/
-              \:  '  X' _| _,\/'   .-'
+              \:  '  X' _| _,\/'   .-''
 .               ":._:'\____  /:'  /      .           .
                     \::.  :\/:'  /              +
    .                 '.:.  /:'  }      .
@@ -39,17 +41,20 @@ dew   ~~~~~~~~~~~~~~~~~~~~~~~\\W~~~~~~~~~~~~\|/~~
 `)
 
 	// Epic narrative
-	fmt.Println("✨ The roots of *Szelvarix* stir gently as you approach...")
-	fmt.Println("🌿 A soft voice echoes from within the sacred bark:")
+	fmt.Println("The roots of *Szelvarix* stir gently as you approach...")
+	fmt.Println("A soft voice echoes from within the sacred bark:")
 	fmt.Println()
 	fmt.Println("    \"State your name, brave wanderer of the realm:\"")
 	fmt.Print("    > ")
 
-	fmt.Scanln(&name)
+	scanner := bufio.NewScanner(os.Stdin)
+	if scanner.Scan() {
+		name = scanner.Text()
+	}
 
 	nameToUpperCase := strings.ToUpper(name)
 	greet := greetings.Hello(nameToUpperCase)
 	fmt.Println()
-	fmt.Println("🌳 The leaves shimmer as your essence is read...")
+	fmt.Println("The leaves shimmer as your essence is read...")
 	fmt.Println(greet)
 }

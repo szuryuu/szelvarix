@@ -42,8 +42,8 @@ func clearScreen() {
 func findChar(char string, nameChar rune, isFound *bool) {
 	clearScreen()
 	currentChar := foundPrefix + char
-	fmt.Printf("%s\n", currentChar)
-	time.Sleep(40 * time.Millisecond)
+	fmt.Println(currentChar)
+	time.Sleep(50 * time.Millisecond)
 	if char == string(nameChar) {
 		foundPrefix += char
 		*isFound = true
