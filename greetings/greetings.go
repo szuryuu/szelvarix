@@ -19,7 +19,7 @@ func Hello(name string) string {
 			continue
 		}
 		for _, alphabetChar := range alphabet {
-			findChar(string(alphabetChar), nameChar, &isFound)
+			FindChar(string(alphabetChar), nameChar, &isFound)
 
 			if isFound {
 				break
@@ -33,14 +33,14 @@ func Hello(name string) string {
 	return fmt.Sprintf("Greetings, %s!", name)
 }
 
-func clearScreen() {
+func ClearScreen() {
 	cmd := exec.Command("clear")
 	cmd.Stdout = os.Stdout
 	cmd.Run()
 }
 
-func findChar(char string, nameChar rune, isFound *bool) {
-	clearScreen()
+func FindChar(char string, nameChar rune, isFound *bool) {
+	ClearScreen()
 	currentChar := foundPrefix + char
 	fmt.Println(currentChar)
 	time.Sleep(50 * time.Millisecond)

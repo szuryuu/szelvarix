@@ -25,22 +25,26 @@ func main() {
   .      ,=':  \    ' '/ + "" +  ' , , ,:' '--".--"---._/7
    '.   (    \: \,-._' ' + '\, ,"   _,--._,---":.__/
               \:  '  X' _| _,\/'   .-''
-.               ":._:'\____  /:'  /      .           .
+.               ":._:'\____  /:'  /           .           .
                     \::.  :\/:'  /              +
    .                 '.:.  /:'  }      .
            .           ):_(:;   \           .
                       /:. _/ ,  |
-    .                (|::.     , + "" +                   .
-     .                |::.    {\                  .
+    .                (|::.  :\/:'  ' ,           .
+     .                |:::(\    |                  .
                       |::.\  \ '.
-                      |:::(\    |
+                      |:::(\    |                  .
               O       |:::/{ }  |                  (o
                )  ___/#\::'/ (O "==._____   O, (O  /'
           ~~~w/w~"~~,\ '/,-(~'"~~~~~~~~"~o~\~/~w|/~
-dew   ~~~~~~~~~~~~~~~~~~~~~~~\\W~~~~~~~~~~~~\|/~~
+ Sz   ~~~~~~~~~~~~~~~~~~~~~~~\\W~~~~~~~~~~~~\|/~~
 `)
 
 	// Epic narrative
+	test := greetings.Stats()
+	card := greetings.Card("Szelvarix", "Elder Dragon", "Fire Breath")
+	fmt.Println(test)
+	fmt.Println(card)
 	fmt.Println("The roots of *Szelvarix* stir gently as you approach...")
 	fmt.Println("A soft voice echoes from within the sacred bark:")
 	fmt.Println()
