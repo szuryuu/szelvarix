@@ -56,5 +56,6 @@ func main() {
 	greet := greetings.Hello(nameToUpperCase)
 	fmt.Println()
 	fmt.Println("The leaves shimmer as your essence is read...")
+	fmt.Println("You Blessed...")
 	fmt.Println(greet)
 }

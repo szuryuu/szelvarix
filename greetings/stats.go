@@ -42,8 +42,6 @@ func Stats() (string, string, string) {
 		skills = append(skills, skill)
 	}
 
-	// randStats := rand.IntN(100-1) + 1
-
 	for key := range stats {
 		stats[key] = rand.IntN(100-1) + 1
 	}

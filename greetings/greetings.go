@@ -46,6 +46,7 @@ func FindChar(char string, nameChar rune, isFound *bool) {
 	ClearScreen()
 	currentChar := foundPrefix + char
 	fmt.Println(currentChar)
+
 	time.Sleep(50 * time.Millisecond)
 	if char == string(nameChar) {
 		foundPrefix += char
