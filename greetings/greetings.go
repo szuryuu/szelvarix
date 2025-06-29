@@ -30,7 +30,10 @@ func Hello(name string) string {
 			return fmt.Sprintf("Sorry, %s!", name)
 		}
 	}
-	return fmt.Sprintf("Greetings, %s!", name)
+
+	role, skill, stat := Stats()
+	card := Card(name, role, skill, stat)
+	return card
 }
 
 func ClearScreen() {

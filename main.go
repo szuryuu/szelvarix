@@ -41,10 +41,6 @@ func main() {
 `)
 
 	// Epic narrative
-	test := greetings.Stats()
-	card := greetings.Card("Szelvarix", "Elder Dragon", "Fire Breath")
-	fmt.Println(test)
-	fmt.Println(card)
 	fmt.Println("The roots of *Szelvarix* stir gently as you approach...")
 	fmt.Println("A soft voice echoes from within the sacred bark:")
 	fmt.Println()
