@@ -62,7 +62,7 @@ func Card(name, role, skill, stats string) string {
 
 	tabStats := "\t" + strings.ReplaceAll(stats, "\n", "\n\t")
 
-	dragonNameplate := fmt.Sprintf(`
+	namePlate := fmt.Sprintf(`
 ═══════════════════════════════════════
 ╔═════════════════════════════════════╗
 %s╚═════════════════════════════════════╝
@@ -82,7 +82,7 @@ func Card(name, role, skill, stats string) string {
 %s╚═════════════════════════════════════╝
 ═══════════════════════════════════════`, emptyLine, name, role, skill, tabStats, emptyLine)
 
-	return dragonNameplate
+	return namePlate
 }
 
 func emptyBoxLine(width int) string {
