@@ -76,7 +76,6 @@ func Card(name, role, skill, stats string) string {
 %s
 
 
-
 	Level: Legendary Master
 ╰─────────────────────────────────────╯
 ╔═════════════════════════════════════╗
